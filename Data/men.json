@@ -1,0 +1,39 @@
+[
+    {
+        "id":1,
+        "name":"checks wali shirt",
+        "price":200,
+        "image":"image/srt1.webp"
+    },
+    {
+        "id":2,
+        "name":"plan wali shirt",
+        "price":250,
+        "image":"image/srt2.webp"
+    },
+    {
+        "id":3,
+        "name":"boy wali shirt",
+        "price":300,
+        "image":"image/srt3.webp"
+    },
+    {
+        "id":4,
+        "name":"red wali",
+        "price":200,
+        "image":"image/wn1.webp"
+    },
+    {
+        "id":5,
+        "name":"blue wali shirt",
+        "price":250,
+        "image":"image/wn2.webp"
+    },
+    {
+        "id":6,
+        "name":"black wali shirt",
+        "price":300,
+        "image":"image/wn3.webp"
+    }      
+    
+]

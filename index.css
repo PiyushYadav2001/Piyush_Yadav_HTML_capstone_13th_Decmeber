@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eeee;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 17px;
+  box-shadow: 0px 2px 2px 2px rgb(158, 121, 121);
+}
+nav h1:hover {
+  color: rgb(5, 167, 167);
+}
+nav .logo {
+  margin-left: 22px;
+  font-size: 24px;
+}
+ul {
+  margin-right: 45px;
+  margin-top: 7px;
+}
+nav ul li {
+  list-style: none;
+}
+
+ul li a {
+  margin-inline: 22px;
+  font-size: 20px;
+}
+ul li i {
+  font-size: 22px;
+}
+ul li #home {
+  color: rgb(5, 167, 167);
+}
+ul li span{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(5, 167, 167);
+    color: #fff;
+     border-radius: 50%; 
+    position: absolute;
+    text-align: center;
+}
+ul li a:hover {
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+ul li i:hover {
+  color: rgb(4, 136, 136);
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+.main .mainText {
+  margin-top: 144px;
+}
+
+.mainText h1 {
+  font-size: 64px;
+}
+.mainText .top {
+  color: rgb(4, 138, 138);
+}
+.mainText button {
+  width: 145px;
+  height: 40px;
+  background-color: rgb(4, 140, 140);
+  border-radius: 20px;
+  border: none;
+  font-size: 22px;
+  color: white;
+}
+.mainText p {
+  margin: 12px;
+}
+.mainText button:hover {
+  border: 3px solid rgb(3, 128, 128);
+  background-color: transparent;
+  color: rgb(2, 121, 121);
+}
+.trend .head h1 {
+  text-align: center;
+  padding: 33px;
+  margin: 22px 22px 22px 22px;
+}
+.trends{
+  text-align: center;
+  padding: 33px;
+  margin: 22px; 
+
+}
+.head span {
+  color: rgb(2, 164, 164);
+}
+.card {
+  display: flex;
+  justify-content: center;
+  
+}
+.card.crd {
+  width: 300px;
+  height: 500px;
+  background-color: green;
+  margin-inline: 11px;
+}
+.crd img {
+  width: 85%;
+  padding: 22px;
+  border-radius: 31px;
+}
+.crdText {
+  margin-left: 31px;
+  padding: 8px;
+}
+.crdText button{
+    width: 110px;
+    height: 33px;
+    border: none;
+    background-color: rgb(5, 141, 141);
+    color: white;
+    font-size: 19px;
+    margin-top: 11px;
+}
+.crdText i{
+    color: rgb(255, 149, 0);
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    margin-inline: 22px;
+    border-radius: 11px;
+}
+.blog:hover{
+    transition: 0.6s ease;
+    width: 520px;
+    height: 320px;
+}
+.blog img{
+    padding: 22px;
+    width: 85%;
+}
+.blogText{
+    padding: 12px;
+    margin-top: 33px;
+}
+.blogText p{
+    margin-bottom: 10px;
+}
+.blogText a{
+    width: 120px;
+   padding: 4px;
+    height: 18px;
+    background-color: rgb(4, 136, 136);
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.blog:hover a:hover{
+    
+        border: 3px solid rgb(3, 128, 128);
+        background-color: transparent;
+        color: rgb(2, 121, 121);
+      
+}
+.letter{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(2, 2, 66);
+    padding: 43px;
+}
+.inp{
+    display: flex;
+}
+.inp input{
+    width: 330px;
+    height: 33px;
+    outline: none;
+    font-size: 18px;
+}
+.inp button{
+    width: 100px;
+    height: 33px;
+    background-color: rgb(4, 136, 136);
+    color: white;
+    border: none;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+     padding: 53px;
+}
+.footer .footerText{
+      margin-inline: 85px;
+}
+.footerText p{
+    margin-top: 11px;
+}
+.cartTab{
+   width: 400px;
+    background-color: #353432;
+   color:  rgb(4, 136, 136); 
+   position: fixed;
+   inset: 0 -400px 0 auto;
+    display: grid; 
+   grid-template-rows: 70px 1fr 70px; 
+   transition: .5s;
+}
+body.showCart .cartTab{
+  inset: 0 0 0 auto;
+}
+.cartTab h1{
+     padding: 20px;
+    margin: 0;
+    font-weight: 300; 
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cartTab .btn button{
+    background-color: rgb(4, 136, 136); 
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .btn .close{
+    background-color: #eee;
+}
+
+.cartTab .listCart .item img{
+    width: 100%; 
+}
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr ;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCart.quantity span:nth-child(2){
+  background-color: transparent;
+  color: black;
+  border: 3px solid red;
+}
+.listCart.item:nth-child(even){
+  background-color: red;
+}
+.listCart{
+  overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+  width: 0;
+}
+.addCart{
+  background-color: rgb(4, 140, 140);
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+.addCart:hover{
+  border: 3px solid rgb(3, 128, 128);
+  background-color: transparent;
+  color: rgb(2, 121, 121);
+  
+}
